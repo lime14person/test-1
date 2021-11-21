@@ -1,0 +1,36 @@
+h1 {
+   background-color: blue; 
+   font-family: Verdana;
+}
+
+button{
+   border: 40px solid violet ; 
+}
+
+#p01 {
+    color: tomato;
+}
+
+.error {
+    color: yellow;
+    background-color: turquoise;
+}
+
+a:link {
+display: inline-block;
+}
+
+
+* {
+ text-align: center;
+  }
+
+  h3 {
+      text-align: center;
+      color: yellow;
+      background-color:rgb(76, 212, 35);
+  
+      border: 7px solid rgb(230, 97, 79);
+      margin-left : 550px; ;
+      margin-right: 550px;
+     }

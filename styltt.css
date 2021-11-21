@@ -1,0 +1,92 @@
+
+#root  {
+    width: 10vw;
+    height: 10vh;
+
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#root img {
+    width: 50px;
+    height: 30px;
+    object-fit: contain;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    animation-name: ghost;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ghost {
+    0% {
+     top: 50%;  
+     left: calc(100%-150px); 
+    }
+
+    25% {
+        top: 50%;
+        left: calc(100%-300px);
+    }
+   
+    50% {
+        top: 50%;
+        bottom: calc(100%-300px);
+    }
+
+    100% {
+        top: 0%;
+        left: 0;
+    }
+}
+
+.left-top {
+   position: absolute;
+   width: 33vw;
+   height: 33vh;
+   top: 0;
+   left: 0;
+}
+
+
+.right-bottom {
+  position: absolute;
+  width: 33vw;
+  height: 33vh;
+  right: 0;
+  bottom: 0;
+}
+
+.left-top img {
+  width: 50px;
+  height: 30px;
+  object-fit: contain;
+
+  animation-name: new;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes new {  
+   0% {
+       top: 0;
+       left: calc(100%-150%);
+   }
+   25%{
+      top: 50%;
+      bottom: calc(100%-300px);
+   }
+   50% {
+      top: 50%;
+      bottom: calc(100%-300px);
+   }
+   
+   100% {
+       top: 0;
+       left: 0;
+   }
+}
